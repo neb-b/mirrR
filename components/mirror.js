@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
 class Mirror extends Component {
-  render() {
+  constructor (props) {
+    super(props)
+  }
+
+  render () {
+    console.log("render", this.props)
     return (
       <div>
         Mirror
@@ -10,4 +16,4 @@ class Mirror extends Component {
   }
 }
 
-export default Mirror
+export default connect((s) => s)(Mirror)
