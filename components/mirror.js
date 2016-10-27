@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+
 import Greeting from './greeting'
+import Weather from './weather'
 import Clock from './clock'
 
 class Mirror extends Component {
@@ -13,6 +15,7 @@ class Mirror extends Component {
     return (
       <div>
         <Greeting />
+        <Weather />
         <Clock />
       </div>
     )
