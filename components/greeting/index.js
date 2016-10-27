@@ -15,7 +15,7 @@ export default class Greeting extends Component {
     const updateInterval = 60000 * updateTimeInMinutes
 
     this.greetingUpdate = setInterval(() => {
-      this.setState({ greetingMsg: getGreetingMsg()})
+      this.setState({ greetingMsg: this.getGreetingMsg()})
     }, updateInterval)
   }
 
