@@ -7,6 +7,8 @@ const logger = createLogger()
 
 export const reducer = (state = [], { type, payload }) => {
   switch (type) {
+    case 'GOOGLE':
+      return payload
     default:
       return state
   }
