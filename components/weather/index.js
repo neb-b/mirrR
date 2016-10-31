@@ -27,8 +27,9 @@ class Weather extends Component {
     return (
       <div>
         {
-          Object.keys(weather).length &&
-          this._renderWeather(weather)
+          Object.keys(weather).length
+            ? this._renderWeather(weather)
+            : <p>No weather, make sure you added an api key</p>
         }
       </div>
     )
