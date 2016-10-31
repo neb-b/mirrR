@@ -4,6 +4,7 @@
   "description": "smart mirror",
   "main": "index.js",
   "scripts": {
+    "start": "next",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +18,12 @@
   },
   "homepage": "https://github.com/seanyesmunt/mirrR#readme",
   "dependencies": {
+    "google-trends-api": "^3.0.0",
     "next": "^1.0.0",
     "react-redux": "^4.4.5",
     "redux": "^3.6.0",
+    "redux-logger": "^2.7.0",
+    "redux-promise": "^0.5.3",
     "redux-thunk": "^2.1.0"
   }
 }

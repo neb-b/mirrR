@@ -1,8 +1,12 @@
 import { createStore, applyMiddleware } from 'redux'
 import thunkMiddleware from 'redux-thunk'
+import promise from 'redux-promise';
+import createLogger from 'redux-logger';
 
-export const reducer = (state = { lastUpdate: 0, light: false }, action) => {
-  switch (action.type) {
+const logger = createLogger()
+
+export const reducer = (state = [], { type, payload }) => {
+  switch (type) {
     default:
       return state
   }
@@ -10,10 +14,10 @@ export const reducer = (state = { lastUpdate: 0, light: false }, action) => {
 
 export const initStore = (reducer, initialState, isServer) => {
   if (isServer && typeof window === 'undefined') {
-    return createStore(reducer, initialState, applyMiddleware(thunkMiddleware))
+    return createStore(reducer, initialState, applyMiddleware(thunkMiddleware, promise, logger))
   } else {
     if (!window.store) {
-      window.store = createStore(reducer, initialState, applyMiddleware(thunkMiddleware))
+      window.store = createStore(reducer, initialState, applyMiddleware(thunkMiddleware, promise, logger))
     }
     return window.store
   }

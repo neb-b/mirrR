@@ -11,7 +11,6 @@ class Mirror extends Component {
   }
 
   render () {
-    console.log("render", this.props)
     return (
       <div>
         <Greeting />
@@ -22,4 +21,8 @@ class Mirror extends Component {
   }
 }
 
-export default connect((s) => s)(Mirror)
+const mapStateToProps = ({ components }) => {
+  return { components }
+}
+
+export default connect(mapStateToProps)(Mirror)
