@@ -1,25 +1,25 @@
-import { createStore, applyMiddleware } from 'redux'
+import { applyMiddleware, createStore, combineReducers } from 'redux'
 import thunkMiddleware from 'redux-thunk'
-import promise from 'redux-promise';
-import createLogger from 'redux-logger';
+import promise from 'redux-promise'
+import createLogger from 'redux-logger'
+import weather from './reducers/weather'
+import google from './reducers/google'
+import components from './reducers/components'
 
 const logger = createLogger()
 
-export const reducer = (state = [], { type, payload }) => {
-  switch (type) {
-    case 'GOOGLE':
-      return payload
-    default:
-      return state
-  }
-}
+export const reducers = combineReducers({
+  weather,
+  google,
+  components
+})
 
-export const initStore = (reducer, initialState, isServer) => {
+export const initStore = (reducers, initialState, isServer) => {
   if (isServer && typeof window === 'undefined') {
-    return createStore(reducer, initialState, applyMiddleware(thunkMiddleware, promise, logger))
+    return createStore(reducers, initialState, applyMiddleware(thunkMiddleware, promise, logger))
   } else {
     if (!window.store) {
-      window.store = createStore(reducer, initialState, applyMiddleware(thunkMiddleware, promise, logger))
+      window.store = createStore(reducers, initialState, applyMiddleware(thunkMiddleware, promise, logger))
     }
     return window.store
   }

@@ -46,7 +46,7 @@ class Google extends Component {
   }
 }
 
-function mapStateToProps({ trends }) {
+function mapStateToProps({ google: { trends } }) {
   return { trends }
 }
 
