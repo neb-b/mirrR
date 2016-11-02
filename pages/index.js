@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import { reducers, initStore } from '../redux/store'
-import components from '../data/components'
 import Mirror from '../components/mirror'
 
 export default class App extends Component {
   static getInitialProps ({ req }) {
     const isServer = !!req
-    const store = initStore(reducers, { components }, isServer)
+    const store = initStore(reducers, {}, isServer)
     return  { initialState: store.getState(), isServer }
   }
   constructor (props) {

@@ -27,5 +27,6 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Routes
+app.use('/components', require('./routes/components'))
 app.use('/google', require('./routes/google'))
 app.use('/weather', require('./routes/weather'))

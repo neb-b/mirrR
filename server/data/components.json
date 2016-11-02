@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Google",
+    "displayName": "Google",
+    "active": true
+  },
+  {
+    "name": "Greeting",
+    "displayName": "Greeting",
+    "active": true
+  },
+  {
+    "name": "Weather",
+    "displayName": "Weather",
+    "active": false
+  },
+  {
+    "name": "Clock",
+    "displayName": "Clock",
+    "active": true
+  }
+]
