@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import fetchWeather from '../../redux/action-creators/weather'
 import WeatherIcon from './weather-icon'
+import {
+  weatherWrapper,
+  weatherH1
+} from './weather.style'
 
 class Weather extends Component {
   constructor(props) {
@@ -15,7 +19,7 @@ class Weather extends Component {
   _renderWeather({ currently, daily }) {
     return (
       <div>
-        <h1>{currently.apparentTemperature.toFixed(0)}&deg;</h1>
+        <h1 className={weatherH1}>{currently.apparentTemperature.toFixed(0)}&deg;</h1>
         <WeatherIcon icon={currently.icon} />
         <p>{daily.summary}</p>
       </div>
@@ -25,7 +29,7 @@ class Weather extends Component {
   render() {
     const { weather } = this.props
     return (
-      <div>
+      <div className={weatherWrapper}>
         {
           Object.keys(weather).length
             ? this._renderWeather(weather)

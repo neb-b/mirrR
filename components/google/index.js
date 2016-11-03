@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import fetchGoogle from '../../redux/action-creators/google'
-
+import {
+  ul,
+  li,
+  trend
+} from './google.style'
+console.log("test", ul, trend)
 
 class Google extends Component {
   constructor(props) {
@@ -25,16 +30,16 @@ class Google extends Component {
   _renderTrend(trend) {
     const { title, hotnessColor } = trend.data.trend
     return (
-      <li key={trend.date}>
-        <span>{trend.longFormattedDate}</span>
-        <span style={{color: hotnessColor}}>{title}</span>
+      <li className={li} key={trend.date}>
+        <span style={{fontSize: '.8em'}}>{trend.longFormattedDate}</span>
+        <span style={{color: hotnessColor, paddingLeft: 10}}>{title}</span>
       </li>
     )
   }
 
   render() {
     return (
-      <ul className="google_trends">
+      <ul className={ul}>
         {
           this.props.trends &&
           this.props.trends

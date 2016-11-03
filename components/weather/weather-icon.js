@@ -1,4 +1,5 @@
 import React from 'react'
+import { weatherIcon } from './weather.style'
 
 export default (currentSky) => {
   // clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night
@@ -39,5 +40,5 @@ export default (currentSky) => {
     default: icon = 'clear-day.png'
   }
 
-  return <img src={`static/weather-icons/${icon}`} />
+  return <img className={weatherIcon} src={`static/weather-icons/${icon}`} />
 }

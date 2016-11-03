@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import moment from 'moment'
+import { clock } from './clock.style'
 
 export default class Clock extends Component {
   constructor() {
@@ -31,9 +32,9 @@ export default class Clock extends Component {
 
   render () {
     return (
-      <div className="time">
-        <h1 className="clock">{this.state.time}</h1>
-        <h3 className="date">{this.state.date}</h3>
+      <div className={clock}>
+        <h1>{this.state.time}</h1>
+        <h3>{this.state.date}</h3>
       </div>
     )
   }

@@ -29,7 +29,7 @@ export default class Greeting extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{textAlign: 'center'}}>
         {this.state.greetingMsg}
       </div>
     )
