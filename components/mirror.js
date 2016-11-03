@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import io from 'socket.io-client'
 import fetchComponents, { updateComponents } from '../redux/action-creators/components'
 import Google from './google'
 import Greeting from './greeting'
 import Weather from './weather'
 import Clock from './clock'
-import io from 'socket.io-client'
+import News from './news'
 
 const availableComponents = {
   Google,
   Greeting,
   Weather,
-  Clock
+  Clock,
+  News
 }
 
 class Mirror extends Component {

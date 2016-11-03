@@ -6,7 +6,6 @@ import {
   li,
   trend
 } from './google.style'
-console.log("test", ul, trend)
 
 class Google extends Component {
   constructor(props) {

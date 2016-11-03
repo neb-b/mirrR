@@ -5,13 +5,15 @@ import createLogger from 'redux-logger'
 import weather from './reducers/weather'
 import google from './reducers/google'
 import components from './reducers/components'
+import news from './reducers/news'
 
 const logger = createLogger()
 
 export const reducers = combineReducers({
   weather,
   google,
-  components
+  components,
+  news
 })
 
 export const initStore = (reducers, initialState, isServer) => {

@@ -30,6 +30,7 @@
     "morgan": "^1.7.0",
     "next": "^1.0.0",
     "node-freegeoip": "^0.0.1",
+    "nyt-top": "^1.0.5",
     "path": "^0.12.7",
     "public-ip": "^2.0.1",
     "react-redux": "^4.4.5",

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import fetchWeather from '../../redux/action-creators/weather'
 import WeatherIcon from './weather-icon'
+import ApiMessage from '../api-message'
 import {
   weatherWrapper,
   weatherH1
@@ -33,7 +34,7 @@ class Weather extends Component {
         {
           Object.keys(weather).length
             ? this._renderWeather(weather)
-            : <p>No weather, make sure you added an api key</p>
+            : <ApiMessage component="weather" />
         }
       </div>
     )
