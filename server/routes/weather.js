@@ -19,7 +19,7 @@ if (process.env.DARKSKY_API_KEY) {
 
 router.get('/', function(req, res) {
   getWeather(function (err, weather) {
-    if (err) return res.send(err)
+    if (err) return res.send({err: err})
     res.send(weather)
   })
 })
