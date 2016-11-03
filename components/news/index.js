@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import fetchNews from '../../redux/action-creators/news'
 import ApiMessage from '../api-message'
+import {
+  news
+} from './news.style'
 
 class News extends Component {
   constructor(props) {
@@ -46,7 +49,7 @@ class News extends Component {
   render() {
     const { news } = this.props
     return (
-      <div>
+      <div className={news}>
         {
           news.data && !news.data.err
             ? this._renderNews(news)
