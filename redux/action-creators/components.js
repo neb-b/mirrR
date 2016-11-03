@@ -10,3 +10,10 @@ export default async function fetchComponents () {
     payload: { components }
   }
 }
+
+export const updateComponents = (newComponents) => {
+  return {
+    type: 'UPDATE_COMPONENTS',
+    payload: { components: newComponents }
+  }
+}

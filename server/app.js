@@ -7,6 +7,7 @@ const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 const app = express()
 const server = require('http').Server(app)
+const io = require('socket.io')(server)
 server.listen(5000)
 console.log('server running on port 5000')
 
@@ -19,7 +20,11 @@ app.use(function (req, res, next) {
   next()
 })
 
-// app.enable('trust proxy')
+app.use(function(req, res, next) {
+  req.io = io
+  next()
+})
+
 app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -30,3 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use('/components', require('./routes/components'))
 app.use('/google', require('./routes/google'))
 app.use('/weather', require('./routes/weather'))
+
+io.on('connection', function (socket) {
+  console.log('connected to mirror')
+})

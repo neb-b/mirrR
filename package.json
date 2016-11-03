@@ -4,8 +4,9 @@
   "description": "smart mirror",
   "main": "index.js",
   "scripts": {
-    "start": "next",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "builder concurrent mirror server",
+    "mirror": "next",
+    "server": "node ./server/app"
   },
   "repository": {
     "type": "git",
@@ -36,5 +37,8 @@
     "redux-logger": "^2.7.0",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "builder": "^3.1.0"
   }
 }

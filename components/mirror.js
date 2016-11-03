@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import fetchComponents from '../redux/action-creators/components'
+import fetchComponents, { updateComponents } from '../redux/action-creators/components'
 import Google from './google'
 import Greeting from './greeting'
 import Weather from './weather'
 import Clock from './clock'
+import io from 'socket.io-client'
 
 const availableComponents = {
   Google,
@@ -16,6 +17,12 @@ const availableComponents = {
 class Mirror extends Component {
   constructor (props) {
     super(props)
+
+    const socket = io('http://localhost:5000')
+
+    socket.on('update-components', (newComponents) => {
+      this.props.updateComponents(newComponents)
+    })
   }
 
   componentDidMount() {
@@ -45,4 +52,4 @@ const mapStateToProps = ({ components: { components } }) => {
   return { components }
 }
 
-export default connect(mapStateToProps, { fetchComponents })(Mirror)
+export default connect(mapStateToProps, { fetchComponents, updateComponents })(Mirror)
