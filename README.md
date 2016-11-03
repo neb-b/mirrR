@@ -1,6 +1,6 @@
 # mirrR
 
-mirrR is a server side rendered React app that can run on a Raspberry Pi
+mirrR is a smart mirror React/Node app that can run on a Raspberry Pi
 
 ## How to run
 
