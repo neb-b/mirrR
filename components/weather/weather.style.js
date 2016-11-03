@@ -12,8 +12,8 @@ export const weatherH1 = css({
 })
 
 export const weatherIcon = css({
-    height: 65,
-    width: 'auto',
-    marginLeft: 10,
-    transform: 'translateY(20px)',
+  height: 65,
+  width: 'auto',
+  marginLeft: 10,
+  transform: 'translateY(20px)',
 })
