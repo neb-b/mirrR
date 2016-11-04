@@ -20,7 +20,7 @@ if (process.env.TWITTER_CONSUMER_KEY &&
 
 let savedTweets
 router.get('/', function(req, res) {
-  if (savedTweets) return res.send(tweets)
+  if (savedTweets) return res.send(savedTweets)
 
   if (client) {
     client.get('statuses/home_timeline', {count: 200}, function(err, tweets, response){
