@@ -7,7 +7,7 @@ export default async function fetchNews () {
   const data = await res.json()
 
   return {
-    type: 'GET_NEWS',
+    type: GET_NEWS,
     payload: { data }
   }
 }
