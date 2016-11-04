@@ -4,7 +4,7 @@ export const newsWrapper = css({
   position: 'absolute',
   bottom: 0,
   right: 0,
-  width: '30%'
+  width: '25%'
 })
 
 export const headline = css({
@@ -13,5 +13,6 @@ export const headline = css({
 })
 
 export const abstract = css({
-  fontWeight: 300
+  fontWeight: 300,
+  textAlign: 'justify'
 })
