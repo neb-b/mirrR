@@ -1,10 +1,17 @@
 import css from 'next/css'
 
-export const news = css({
-  color: 'red',
+export const newsWrapper = css({
   position: 'absolute',
   bottom: 0,
   right: 0,
-  width: '20%',
-  minWidth: 200
+  width: '30%'
+})
+
+export const headline = css({
+  fontWeight: 600,
+  marginTop: 30
+})
+
+export const abstract = css({
+  fontWeight: 300
 })

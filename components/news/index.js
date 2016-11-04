@@ -3,7 +3,9 @@ import { connect } from 'react-redux'
 import fetchNews from '../../redux/action-creators/news'
 import ApiMessage from '../api-message'
 import {
-  news
+  newsWrapper,
+  abstract,
+  headline
 } from './news.style'
 
 class News extends Component {
@@ -28,8 +30,8 @@ class News extends Component {
   _renderStory(story) {
     return (
       <div key={story.url}>
-        <p>{story.title}</p>
-        <p>{story.abstract}</p>
+        <p className={headline}>{story.title}</p>
+        <p className={abstract}>{story.abstract}</p>
       </div>
     )
   }
@@ -49,7 +51,7 @@ class News extends Component {
   render() {
     const { news } = this.props
     return (
-      <div className={news}>
+      <div className={newsWrapper}>
         {
           news.data && !news.data.err
             ? this._renderNews(news)

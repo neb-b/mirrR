@@ -21,7 +21,7 @@ export default class App extends Component {
       <div>
         <Head>
           <title>mirrR</title>
-          <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
         </Head>
         <Provider store={this.store}>
           <Mirror />
