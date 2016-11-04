@@ -18,12 +18,15 @@ if (process.env.TWITTER_CONSUMER_KEY &&
    })
 }
 
-
+let savedTweets
 router.get('/', function(req, res) {
+  if (savedTweets) return res.send(tweets)
+
   if (client) {
     client.get('statuses/home_timeline', {count: 200}, function(err, tweets, response){
       if (err) return res.send({err: err})
       if (tweets[0].code === 88) return res.send({err: tweets[0].message})
+      savedTweets = tweets
       res.send(tweets)
     })
   } else {

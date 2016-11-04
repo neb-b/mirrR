@@ -1,4 +1,4 @@
-import css from 'next/css'
+import css, {insertRule} from 'next/css'
 
 export const twitterWrapper = css({
   margin: 0,
@@ -13,6 +13,21 @@ export const twitterWrapper = css({
   listStyleType: 'none',
 })
 
-export const tweet = css({
-  color: 'red'
+export const tweetWrapper = css({
+  paddingTop: 10,
+  paddingBottom: 10
 })
+
+export const tweetTime = css({
+  paddingLeft: 10
+})
+
+export const tweetImg = css({
+  maxWidth: '100%'
+})
+
+export const smallText = css({
+  fontWeight: 300,
+})
+
+insertRule(".tweet-wrapper:first-child { animation-duration: 350s; animation-name: scroll; animation-timing-function: linear; }")

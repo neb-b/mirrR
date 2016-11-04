@@ -6,7 +6,10 @@ import stringToDate from './twitter-date'
 
 import {
   twitterWrapper,
-  tweet
+  tweetWrapper,
+  tweetTime,
+  tweetImg,
+  smallText
 } from './twitter.style'
 
 class TwitterFeed extends Component {
@@ -29,15 +32,15 @@ class TwitterFeed extends Component {
 
   _renderTweet(tweet) {
     return (
-      <li className={tweet} key={tweet.id}>
-        <div>{tweet.user.name}</div>
-        <div>
+      <li className={`${tweetWrapper} tweet-wrapper`} key={tweet.id}>
+        <div className={smallText}>{tweet.user.name}</div>
+        <div className={smallText}>
           <span>@{tweet.user.screen_name}</span>
-          <span>{stringToDate(tweet.created_at)}</span>
+          <span className={tweetTime}>{stringToDate(tweet.created_at)}</span>
         </div>
         <div>
-          <span>{tweet.retweeted_status ? tweet.retweeted_status.text : 'RT: ' + tweet.text}</span>
-          {tweet.extended_entities ? <img className="twitter_img" src={tweet.extended_entities.media[0].media_url} /> : null}
+          <span>{tweet.text}</span>
+          {tweet.extended_entities ? <img className={tweetImg} src={tweet.extended_entities.media[0].media_url} /> : null}
         </div>
       </li>
     )
