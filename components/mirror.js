@@ -7,13 +7,15 @@ import Greeting from './greeting'
 import Weather from './weather'
 import Clock from './clock'
 import News from './news'
+import Twitter from './twitter'
 
 const availableComponents = {
   Google,
   Greeting,
   Weather,
   Clock,
-  News
+  News,
+  Twitter
 }
 
 class Mirror extends Component {

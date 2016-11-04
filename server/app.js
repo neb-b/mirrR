@@ -36,6 +36,7 @@ app.use('/components', require('./routes/components'))
 app.use('/google', require('./routes/google'))
 app.use('/weather', require('./routes/weather'))
 app.use('/news', require('./routes/news'))
+app.use('/twitter', require('./routes/twitter'))
 
 io.on('connection', function (socket) {
   console.log('connected to mirror')

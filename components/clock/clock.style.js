@@ -5,3 +5,7 @@ export const clock = css({
   textAlign: 'right',
   fontSize: 20
 })
+
+export const time = css({
+  margin: 0
+})

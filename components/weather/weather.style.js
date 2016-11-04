@@ -8,7 +8,8 @@ export const weatherWrapper = css({
 })
 
 export const weatherH1 = css({
-  display: 'inline-block'
+  display: 'inline-block',
+  margin: 0
 })
 
 export const weatherIcon = css({

@@ -6,6 +6,7 @@ import weather from './reducers/weather'
 import google from './reducers/google'
 import components from './reducers/components'
 import news from './reducers/news'
+import twitter from './reducers/twitter'
 
 const logger = createLogger()
 
@@ -13,7 +14,8 @@ export const reducers = combineReducers({
   weather,
   google,
   components,
-  news
+  news,
+  twitter
 })
 
 export const initStore = (reducers, initialState, isServer) => {
