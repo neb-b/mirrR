@@ -9,7 +9,7 @@ export const newsWrapper = css({
 
 export const headline = css({
   fontWeight: 600,
-  marginTop: 30
+  marginTop: 15
 })
 
 export const abstract = css({
