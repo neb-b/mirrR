@@ -1,11 +1,11 @@
-import css, {insertRule} from 'next/css'
+import css, { keyframes, insertRule } from 'next/css'
 
 export const twitterWrapper = css({
   margin: 0,
   padding: 0,
   position: 'absolute',
   bottom: 0,
-  height: '60%',
+  height: '65%',
   minHeight: 300,
   width: '25%',
   minWidth: 250,
@@ -30,4 +30,7 @@ export const smallText = css({
   fontWeight: 300,
 })
 
-insertRule(".tweet-wrapper:first-child { animation-duration: 350s; animation-name: scroll; animation-timing-function: linear; }")
+export const scroll = keyframes({
+  '0%': { marginTop: 0 },
+  '100%': { marginTop: '-3000%' }
+})

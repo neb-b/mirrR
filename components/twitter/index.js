@@ -3,13 +3,15 @@ import { connect } from 'react-redux'
 import fetchTweets from '../../redux/action-creators/twitter'
 import ApiMessage from '../api-message'
 import stringToDate from './twitter-date'
+import { keyframes, style, firstChild } from 'next/css'
 
 import {
   twitterWrapper,
   tweetWrapper,
   tweetTime,
   tweetImg,
-  smallText
+  smallText,
+  scroll
 } from './twitter.style'
 
 class TwitterFeed extends Component {
@@ -32,7 +34,7 @@ class TwitterFeed extends Component {
 
   _renderTweet(tweet) {
     return (
-      <li className={`${tweetWrapper} tweet-wrapper`} key={tweet.id}>
+      <li className={tweetWrapper} {...firstChild({ animation: `${scroll} 350s`})}>
         <div className={smallText}>{tweet.user.name}</div>
         <div className={smallText}>
           <span>@{tweet.user.screen_name}</span>
@@ -48,6 +50,9 @@ class TwitterFeed extends Component {
 
   render() {
     const { tweets } = this.props
+    //
+
+
     return (
       <ul className={twitterWrapper}>
         {

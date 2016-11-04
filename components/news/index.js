@@ -54,8 +54,8 @@ class News extends Component {
       <div className={newsWrapper}>
         {
           news.data && !news.data.err
-            ? this._renderNews(news)
-            : <ApiMessage component="news" />
+          ? this._renderNews(news)
+          : <ApiMessage component="news" />
         }
       </div>
     )
