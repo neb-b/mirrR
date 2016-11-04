@@ -1,6 +1,8 @@
+import { GET_GOOGLE } from '../constants'
+
 const google = (state = {}, { type, payload }) => {
   switch (type) {
-    case 'GOOGLE':
+    case GET_GOOGLE:
       return payload
     default:
       return state

@@ -1,0 +1,6 @@
+export const GET_COMPONENTS = "GET_COMPONENTS"
+export const UPDATE_COMPONENTS = "UPDATE_COMPONENTS"
+
+export const GET_GOOGLE = "GET_GOOGLE"
+export const GET_TWITTER = "GET_TWITTER"
+export const GET_WEATHER = "GET_WEATHER"

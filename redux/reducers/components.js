@@ -1,8 +1,10 @@
+import { GET_COMPONENTS, UPDATE_COMPONENTS } from '../constants'
+
 const components = (state = {}, { type, payload }) => {
   switch (type) {
-    case 'FETCH_COMPONENTS':
+    case GET_COMPONENTS:
       return payload
-    case 'UPDATE_COMPONENTS':
+    case UPDATE_COMPONENTS:
       return payload
     default:
       return state
