@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "builder concurrent mirror server",
-    "mirrr": "builder concurrent mirror server",
     "mirror": "next",
     "server": "node ./server/app"
   },

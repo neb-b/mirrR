@@ -6,4 +6,4 @@ mirrR is a smart mirror React/Node app that can run on a Raspberry Pi
 
 `git clone https://github.com/seanyesmunt/mirrR && cd mirrR`
 
-`npm i && npm run mirrr`
+`npm i && npm start`
