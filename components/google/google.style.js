@@ -1,6 +1,7 @@
 import css from 'next/css'
 
 export const ul = css({
+  padding: 0,
   listStyleType: 'none',
   textAlign: 'center'
 })
