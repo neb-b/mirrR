@@ -32,4 +32,4 @@ export default class App extends Component {
 }
 
 // Global CSS rule
-insertRule("html, body { margin: 0; padding: 0; font-family: 'Lato', sans-serif; }")
+insertRule("html, body { margin: 0; padding: 20; font-family: 'Lato', sans-serif; }")

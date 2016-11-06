@@ -3,7 +3,7 @@ import css from 'next/css'
 export const newsWrapper = css({
   position: 'absolute',
   bottom: 0,
-  right: 0,
+  right: 10,
   width: '25%'
 })
 

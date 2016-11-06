@@ -40,7 +40,7 @@ class Mirror extends Component {
 
   render () {
     return (
-      <div>
+      <div style={{padding: 10}}>
         {
           this.props.components &&
           this.props.components
