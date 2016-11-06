@@ -32,5 +32,6 @@ export const smallText = css({
 
 export const scroll = keyframes({
   '0%': { marginTop: 0 },
+  '50%': { marginTop: '-1500%' },
   '100%': { marginTop: '-3000%' }
 })
