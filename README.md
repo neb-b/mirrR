@@ -25,6 +25,8 @@ Out of the box, News, Twitter and Weather will not work. You will need to retrie
 
 ### Other info
 
+This works on a Raspberry Pi 3. The original Pi is too slow to run this page, I haven't tested this on a Pi 2.
+
 If you need to install Node/NPM, checkout [this treehouse guide](http://treehouse.github.io/installation-guides/mac/node-mac.html).
 
 Talk to me [@seanyesmunt](https://twitter.com/seanyesmunt) if you have any questions.
