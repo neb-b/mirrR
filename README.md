@@ -12,17 +12,16 @@ Open your terminal and copy and paste these commands:
 
 Then go to [http://localhost:3000](http://localhost:3000)
 
+
 ### News/Twitter/Weather
 
-To see news, Twitter, or the weather component, you will have to get the corresponding api keys.
+Out of the box, News, Twitter and Weather will not work. You will need to retrieve the API keys first. MirrR will work fine without the API keys, you will just see a message if you try to toggle a component that needs one.
 
 [News (NY Times)](https://developer.nytimes.com/signup) Choose "Top Stories V1" from the dropdown.
 
 [Twitter](https://apps.twitter.com/) You will need to signup and create a new app.
 
 [Weather (forecast.io)](https://developer.forecast.io/)
-
-The Mirror will work fine without the API keys, it will just show a message if you try to use an app without an API key.
 
 ### Other info
 
