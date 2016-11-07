@@ -23,7 +23,7 @@ class TwitterFeed extends Component {
   componentDidMount() {
     this.props.fetchTweets()
 
-    const updateTimeinMinutes = 5
+    const updateTimeinMinutes = 6
     const twitterUpdateInterval = 60000 * updateTimeinMinutes
     this.twitterUpdate = setInterval(this.props.fetchTweets, twitterUpdateInterval)
   }
@@ -34,7 +34,10 @@ class TwitterFeed extends Component {
 
   _renderTweet(tweet) {
     return (
-      <li className={tweetWrapper} {...firstChild({ animation: `${scroll} 350s`})}>
+      <li
+        key={tweet.id}
+        className={tweetWrapper}
+        {...firstChild({ animation: `${scroll} 350s`})}>
         <div className={smallText}>{tweet.user.name}</div>
         <div className={smallText}>
           <span>@{tweet.user.screen_name}</span>
@@ -50,8 +53,6 @@ class TwitterFeed extends Component {
 
   render() {
     const { tweets } = this.props
-    //
-
 
     return (
       <ul className={twitterWrapper}>
