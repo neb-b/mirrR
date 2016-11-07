@@ -7,6 +7,7 @@ import google from './reducers/google'
 import components from './reducers/components'
 import news from './reducers/news'
 import twitter from './reducers/twitter'
+import greeting from './reducers/greeting'
 
 const logger = createLogger()
 
@@ -15,7 +16,8 @@ export const reducers = combineReducers({
   google,
   components,
   news,
-  twitter
+  twitter,
+  greeting
 })
 
 export const initStore = (reducers, initialState, isServer) => {
