@@ -13,6 +13,13 @@ Open your terminal and copy and paste these commands:
 
 Then go to [http://localhost:3000](http://localhost:3000)
 
+## Widgets
+
+Currently there are widgets for Google trends, a greeting message, date, news, weather and your Twitter Feed.
+
+#### Google
+
+A list of the most searched Google terms each day, change in color (yellow -> red) means more people searched for that term.
 
 ### News/Twitter/Weather
 
