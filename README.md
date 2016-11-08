@@ -1,6 +1,9 @@
 # mirrR
 
 mirrR is a smart mirror React/Node app that can run on a Raspberry Pi
+
+Checkout [MirrR Control](https://github.com/seanyesmunt/mirrR-contro) to toggle the mirrR widgets
+
 ![mirrR](mirrR.gif)
 
 ## How to run
