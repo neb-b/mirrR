@@ -1,6 +1,11 @@
 require('es6-promise').polyfill()
 require('isomorphic-fetch')
-import { GET_COMPONENTS, UPDATE_COMPONENTS } from '../constants'
+import {
+  GET_COMPONENTS,
+  GET_COMPONENTS_ERROR,
+  UPDATE_COMPONENTS ,
+  UPDATE_COMPONENTS_ERROR
+} from '../constants'
 
 export default async function fetchComponents () {
   const res = await fetch('http://localhost:5000/components')

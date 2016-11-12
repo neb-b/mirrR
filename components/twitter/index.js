@@ -52,12 +52,12 @@ class TwitterFeed extends Component {
   }
 
   render() {
-    const { tweets } = this.props
+    const { tweets, error } = this.props
 
     return (
       <ul className={twitterWrapper}>
         {
-          tweets && !tweets.err
+          !error && tweets && !tweets.err
           ? tweets.map(this._renderTweet)
           : <ApiMessage component="Twitter" />
         }

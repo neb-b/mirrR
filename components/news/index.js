@@ -49,11 +49,11 @@ class News extends Component {
   }
 
   render() {
-    const { news } = this.props
+    const { error, news } = this.props
     return (
       <div className={newsWrapper}>
         {
-          news.data && !news.data.err
+          !error && news.data && !news.data.err
           ? this._renderNews(news)
           : <ApiMessage component="news" />
         }

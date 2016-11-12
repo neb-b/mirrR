@@ -28,12 +28,12 @@ class Weather extends Component {
   }
 
   render() {
-    const { weather } = this.props
+    const { error, weather } = this.props
 
     return (
       <div className={weatherWrapper}>
         {
-          Object.keys(weather).length && !weather.err
+          !error && Object.keys(weather).length && !weather.err
           ? this._renderWeather(weather)
           : <ApiMessage component="weather" />
         }

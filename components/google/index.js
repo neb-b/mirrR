@@ -37,11 +37,12 @@ class Google extends Component {
   }
 
   render() {
+    const { error, trends } = this.props
     return (
       <ul className={ul}>
         {
-          this.props.trends &&
-          this.props.trends
+          !error && trends &&
+          trends
             .filter(trend => trend.data)
             .map(this._renderTrend)
         }
