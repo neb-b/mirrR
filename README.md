@@ -12,6 +12,8 @@ Checkout [MirrR Control](https://github.com/seanyesmunt/mirrR-control) to toggle
 
 Then go to [http://localhost:3000](http://localhost:3000)
 
+If you need to install Node checkout [this guide](http://treehouse.github.io/installation-guides/mac/node-mac.html).
+
 ## Widgets
 
 Currently there are widgets for Google trends, a greeting message, date, news, weather and your Twitter Feed.
