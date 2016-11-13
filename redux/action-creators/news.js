@@ -4,7 +4,7 @@ import { GET_NEWS, GET_NEWS_ERROR } from '../constants'
 
 export default async function fetchNews () {
   try {
-    const res = await fetch('http://localhost:5000/news')
+    const res = await fetch(`${URL}/news`)
     const data = await res.json()
 
     return {

@@ -8,7 +8,7 @@ import {
 } from '../constants'
 
 export default async function fetchComponents () {
-  const res = await fetch('http://localhost:5000/components')
+  const res = await fetch(`${URL}/components`)
   const components = await res.json()
 
   return {

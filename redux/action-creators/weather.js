@@ -1,10 +1,10 @@
 require('es6-promise').polyfill()
 require('isomorphic-fetch')
-import { GET_WEATHER, GET_WEATHER_ERROR } from '../constants'
+import { GET_WEATHER, GET_WEATHER_ERROR, URL } from '../constants'
 
 export default async function fetchWeather () {
   try {
-    const res = await fetch('http://192.168.1.10:5000/weather')
+    const res = await fetch(`${URL}/weather`)
     const data = await res.json()
 
     return {

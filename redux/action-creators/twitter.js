@@ -4,7 +4,7 @@ import { GET_TWITTER, GET_TWITTER_ERROR } from '../constants'
 
 export default async function fetchGoogle () {
   try {
-    const res = await fetch('http://localhost:5000/twitter')
+    const res = await fetch(`${URL}/twitter`)
     const data = await res.json()
 
     return {
