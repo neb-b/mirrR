@@ -1,6 +1,6 @@
 {
   "name": "mirrr",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "smart mirror",
   "main": "index.js",
   "scripts": {
