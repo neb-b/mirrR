@@ -20,7 +20,7 @@ Currently there are widgets for Google trends, a greeting message, date, news, w
 
 A list of the most searched Google terms each day, change in color (yellow -> red) means more people searched for that term.
 
-### News/Twitter/Weather
+#### News/Twitter/Weather
 
 Out of the box, News, Twitter and Weather will not work. You will need to retrieve the API keys first. MirrR will work fine without the API keys, you will just see a message if you try to toggle a component that needs one.
 
@@ -30,7 +30,7 @@ Out of the box, News, Twitter and Weather will not work. You will need to retrie
 
 [Weather (forecast.io)](https://developer.forecast.io/)
 
-### Other info
+## Other info
 
 I am in the process of create a more in depth how to install guide, that will also contain the Pi setup.
 
