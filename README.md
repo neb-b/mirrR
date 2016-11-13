@@ -8,13 +8,7 @@ Checkout [MirrR Control](https://github.com/seanyesmunt/mirrR-control) to toggle
 
 ## How to run
 
-Open your terminal and copy and paste these commands:
-
-`git clone https://github.com/seanyesmunt/mirrR && cd mirrR`
-
 `npm i && npm run mirrr`
-
-If you get an error saying you need to install Node/NPM, checkout [this treehouse guide](http://treehouse.github.io/installation-guides/mac/node-mac.html).
 
 Then go to [http://localhost:3000](http://localhost:3000)
 
