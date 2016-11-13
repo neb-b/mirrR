@@ -3,7 +3,7 @@ import css, { keyframes, insertRule } from 'next/css'
 export const twitterWrapper = css({
   position: 'absolute',
   bottom: 0,
-  right: 0,
+  right: 10,
   height: '60%',
   minHeight: 300,
   width: '25%',
