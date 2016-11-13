@@ -1,6 +1,6 @@
 require('es6-promise').polyfill()
 require('isomorphic-fetch')
-import { GET_TWITTER, GET_TWITTER_ERROR } from '../constants'
+import { GET_TWITTER, GET_TWITTER_ERROR, URL } from '../constants'
 
 export default async function fetchGoogle () {
   try {

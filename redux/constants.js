@@ -1,4 +1,4 @@
-export cost URL = 'http://localhost:5000'
+export const URL = 'http://localhost:5000'
 
 export const GET_COMPONENTS = 'GET_COMPONENTS'
 export const GET_COMPONENTS_ERROR = 'GET_COMPONENTS_ERROR'

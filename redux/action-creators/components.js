@@ -4,7 +4,8 @@ import {
   GET_COMPONENTS,
   GET_COMPONENTS_ERROR,
   UPDATE_COMPONENTS ,
-  UPDATE_COMPONENTS_ERROR
+  UPDATE_COMPONENTS_ERROR,
+  URL
 } from '../constants'
 
 export default async function fetchComponents () {

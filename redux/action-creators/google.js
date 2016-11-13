@@ -1,6 +1,6 @@
 require('es6-promise').polyfill()
 require('isomorphic-fetch')
-import { GET_GOOGLE, GET_GOOGLE_ERROR } from '../constants'
+import { GET_GOOGLE, GET_GOOGLE_ERROR, URL } from '../constants'
 
 export default async function fetchGoogle () {
   try {
