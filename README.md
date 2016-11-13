@@ -12,7 +12,7 @@ Open your terminal and copy and paste these commands:
 
 `git clone https://github.com/seanyesmunt/mirrR && cd mirrR`
 
-`npm i && npm start`
+`npm i && npm run mirrr`
 
 If you get an error saying you need to install Node/NPM, checkout [this treehouse guide](http://treehouse.github.io/installation-guides/mac/node-mac.html).
 
