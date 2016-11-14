@@ -19,7 +19,6 @@ router.get('/', (req, res) => {
 router.put('/', function(req, res) {
   const io = req.io
   mirrorComponents = req.body.components
-  console.log('newComponents', mirrorComponents)
 
   fs.writeFile(file, JSON.stringify(mirrorComponents), function() {
     res.send(mirrorComponents)
