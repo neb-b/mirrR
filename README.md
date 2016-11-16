@@ -8,11 +8,19 @@ More in depth how to install guide coming soon.
 
 ![](demo.gif)
 
-## How to run
+## How to install
+
+This is meant to run on a Raspberry Pi, but you can also run it on your computer to check it out and test the app. After running the commands you should see a message that says, "Ready on [http://localhost:3000](http://localhost:3000)"
+
+Copy and paste one of these commands into your terminal
+
+### From the Raspberry Pi
+
+`curl -sL https://raw.githubusercontent.com/seanyesmunt/mirrR/master/installer.sh | bash`
+
+### From your computer
 
 `git clone https://github.com/seanyesmunt/mirrR && cd mirrR && npm i && npm start`
-
-Then go to [http://localhost:3000](http://localhost:3000)
 
 
 ## Widgets
@@ -40,7 +48,3 @@ I am in the process of create a more in depth how to install guide, that will al
 This works on a Raspberry Pi 3. The original Pi is too slow to run this page, I haven't tested this on a Pi 2.
 
 Talk to me [@seanyesmunt](https://twitter.com/seanyesmunt) if you have any questions.
-
-#### Test
-
-`curl -sL https://raw.githubusercontent.com/seanyesmunt/mirrR/master/installer.sh | bash`
