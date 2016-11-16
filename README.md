@@ -10,7 +10,15 @@ More in depth how to install guide coming soon.
 
 ## How to run
 
-`npm i && npm run mirrr`
+### From the Raspberry Pi
+
+Open your terminal and copy and paste this command:
+
+`curl -sL https://raw.githubusercontent.com/seanyesmunt/mirrR/master/installer.sh | bash`
+
+### To test it out on your computer
+
+`git clone https://github.com/seanyesmunt/mirrR && cd mirrR && npm i && npm start`
 
 Then go to [http://localhost:3000](http://localhost:3000)
 
