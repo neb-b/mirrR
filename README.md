@@ -40,3 +40,7 @@ I am in the process of create a more in depth how to install guide, that will al
 This works on a Raspberry Pi 3. The original Pi is too slow to run this page, I haven't tested this on a Pi 2.
 
 Talk to me [@seanyesmunt](https://twitter.com/seanyesmunt) if you have any questions.
+
+#### Test
+
+`curl -sL https://raw.githubusercontent.com/seanyesmunt/mirrR/master/installer.sh | bash`
