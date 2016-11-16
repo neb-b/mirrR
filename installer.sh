@@ -23,6 +23,8 @@ fi
 function version_gt() { test "$(echo "$@" | tr " " "\n" | sort -V | head -n 1)" != "$1"; }
 function command_exists () { type "$1" &> /dev/null ;}
 
+echo -e "\e[96mInstalling helper tools ...\e[90m"
+sudo apt-get install curl wget git build-essential unzip || exit
 
 # Check if we need to install or upgrade Node.js.
 echo -e "\e[96mCheck current Node installation ...\e[0m"
